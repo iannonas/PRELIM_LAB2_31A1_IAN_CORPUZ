@@ -1,0 +1,19 @@
+﻿@model (PRELIM_LAB2_31A1_IAN_CORPUZ.Models.Book book, PRELIM_LAB2_31A1_IAN_CORPUZ.Models.Customer customer)
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>📚 Book Details</h2>
+<ul>
+    <li><strong>ID:</strong> @Model.book.Id</li>
+    <li><strong>Title:</strong> @Model.book.Title</li>
+    <li><strong>Author:</strong> @Model.book.Author</li>
+</ul>
+
+<h2>👤 Customer Info</h2>
+<ul>
+    <li><strong>Title:</strong> @Model.customer.Title</li>
+    <li><strong>Full Name:</strong> @Model.customer.FullName</li>
+    <li><strong>Email:</strong> @Model.customer.Email</li>
+</ul>
